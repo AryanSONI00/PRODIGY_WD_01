@@ -11,3 +11,4 @@ This project features an interactive navigation menu designed for a webpage dedi
 ## Technologies Used
 - **HTML5**: Structured the content and ensured semantic correctness.
 - **CSS3**: Styled the navigation menu and implemented transitions for a smoother user experience.
+- **JavaScript ES6**: Added interactivity through event listeners for hover and scroll effects.
