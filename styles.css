@@ -1,0 +1,117 @@
+/* Reset basic styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #212121;
+	color: #f0f0f0;
+	scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.85);
+	transition: background-color 0.3s ease;
+	z-index: 1000;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.nav-logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fcba03;
+	text-decoration: none;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+}
+
+.nav-menu li {
+	margin-left: 20px;
+}
+
+.nav-menu a {
+	color: #f0f0f0;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 8px 12px;
+	transition: color 0.3s ease, transform 0.3s;
+}
+
+.nav-menu a:hover {
+	color: #fcba03; /* Barcelona-themed color */
+	transform: scale(1.1);
+}
+
+/* Scroll Effect */
+.navbar.scrolled {
+	background-color: #1a1a1a;
+}
+
+/* Section Styles */
+section {
+	min-height: 100vh;
+	padding: 80px 40px;
+	text-align: left;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center the content */
+	justify-content: center; /* Center the content */
+}
+
+.reveal {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+section h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #fcba03;
+	text-align: center; /* Center the heading */
+}
+
+section p {
+	font-size: 18px;
+	line-height: 1.6;
+	max-width: 800px; /* Limit the width of text for better readability */
+	text-align: justify; /* Justify text for a cleaner look */
+	margin-bottom: 20px;
+}
+
+section ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+section ul li {
+	margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #1a1a1a;
+	color: #f0f0f0;
+}
